@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+  	<title>TEXTER 1.0</title>
+	<style type="text/css">
+		body
+		{
+        background-image:url("T3X73R%20W4LL9A93R.jpg");
+        }
+		#head
+		{
+         font-family: 'Permanent Marker', cursive;
+         color:#c42b40;
+         background-color:#295dd6;
+         border-radius: 5px 5px 5px 5px;
+        }
+        #masthead
+        {
+        color: white;
+        cursor: cell;
+        font-family: 'Big Shoulders Stencil Display', cursive;
+        text-decoration:  wavy underline overline white;
+        }
+		h3
+		{
+         font-family: 'Big Shoulders Stencil Display', cursive;
+         color:green;
+         background-color:black;
+        }
+        h5
+        {
+        color: white;
+        background-color: black;
+        }
+        a
+        {
+        color: yellow;
+        }
+        a:hover
+        {
+        background-color:blue;
+        color:white;
+        }
+        button
+        {
+         color:yellow;
+         background-color:#206792;
+        }
+        #time
+        {
+            background-color: #113456;
+            color:#eee;
+            width: 550px;
+        }
+        #WELCOME{
+            color:#206792;
+            font-size: 20x;
+            font-family:'System';
+            text-shadow:5px 4px 3px #2e2d2d;
+        }
+        #courtesy{
+            color:red;
+            width: 150px;
+            height: 55px;
+        }
+        #contributers{
+            color: green;
+        }
+        #hello
+        {
+        font-family: 'Major Mono Display', monospace;
+        color: red;
+        text-decoration: underline white;
+        }
+        #credits
+        {
+        color: yellow;
+        text-decoration: underline white;
+        }
+	</style>
+</head>
+<body>
+<center><h1 id="masthead"><b>TEXTER</b> 1.0</h1><h1 id="hello">HELLO FRIEND</h1></center>
+<center><h4 id="time"></h4></center>
+<center><h1 id="WELCOME"></h1></center>
+<button onclick="window.print()">SAVE</button>
+<center><h5>DESIGNED & DEVELOPED BY<a href="https://www.github.com/VerronCoss" target="_blank"> HARMAN SINGH </a></h5></center>
+<h1 contenteditable="true" id="head" onclick="typeWriter(),EditTime()"></h1>
+<h3 contenteditable="true" onclick="typeWriter(),EditTime()"></h3>
+<h2 id="contributers"></h2>
+<p id="courtesy">WALLPAPER : T3X73R W4LL9A93R.JPG;</p>
+<center><p id="credits">2020&copy; TEXTER 1.0</p></center>
+<script>
+var editor = prompt("EDITOR NAME: \n **YOU SHOULD ALSO WRITE CONTRIBUTER'S NAME IF ANY,**\n");
+while (editor == "") {
+    var editor = prompt("EDITOR NAME: \n **YOU SHOULD ALSO WRITE CONTRIBUTER'S NAME IF ANY,**\n:\n");
+}
+document.getElementById("contributers").innerHTML = "Editors Names : " + editor + ";";
+var i = 0;
+var txt = 'VERIFIED.';
+function EditTime() 
+{
+    var d = new Date();
+    var year = d.getFullYear();
+    var month = d.getMonth() + 1;
+    var date = d.getDate();
+    var week = d.getDay();
+    var hours = d.getHours();
+    var mins = d.getMinutes();
+    var secs = d.getSeconds();
+    document.getElementById("time").innerHTML = "STARTED EDITING @ " + date + "/" +  month  +"/" + year + "(TIME = " +
+    hours + "." + mins + "." + secs + " and " + week + "th Day In The Week)";
+}
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("WELCOME").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, 100);
+  }
+}
+</script>
+</body>
+</html>

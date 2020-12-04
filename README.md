@@ -7,9 +7,9 @@ Lightweight Text Editor,Works Fine On Laptop's &amp; Desktop,Comes With Browser 
 <code>git clone https://github.com/TexterAdmin/TEXTER1.0.git</code>
 <h4>WEBSITE:</h4>
 <ul>
-  <li><a href="texteradmin.github.io/TEXTER1.0">texteradmin.github.io/TEXTER1.0</a></li>
+  <li><a href="https://texteradmin.github.io/TEXTER1.0">texteradmin.github.io/TEXTER1.0</a></li>
 </ul>
 <h4>READ LICENSE:</h4>
 <ul>
-  <li><a href="texteradmin.github.io/TEXTER1.0/LICENSE.txt">LICENSE.txt</a></li>
+  <li><a href="https://texteradmin.github.io/TEXTER1.0/LICENSE.txt">LICENSE.txt</a></li>
 </ul>
